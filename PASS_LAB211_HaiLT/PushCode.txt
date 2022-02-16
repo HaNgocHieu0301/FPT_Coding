@@ -1,0 +1,9 @@
+git add . (add các file ở thư mục hiện tại)
+
+Commit:
+
+git commit -m "Chú thích cho lần commit này"
+
+Push code:
+
+git push
