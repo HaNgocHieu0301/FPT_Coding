@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+body {
+    background: #f3efef;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*---------------------------------------
+   TYPOGRAPHY              
+-----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+h1 {
+    color: #252525;
+    font-size: 3em;
+    line-height: 50px;
+}
+
+h2 {
+    color: #353535;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+h3,
+h3 a {
+    color: #454545;
+}
+
+h6 {}
+
+p {
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+
+/*---------------------------------------
+   GENERAL               
+-----------------------------------------*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #252525;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #ce3232;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #000000;
+}
+
+.section-title {
+    padding-bottom: 20px;
+}
+
+.section-title h2 {
+    margin: 0;
+}
+
+.section-title h4 {
+    color: #bfbdbd;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    padding: 100px 0;
+}
+
+#team,
+#menu {
+    text-align: center;
+}
+
+.about-image img,
+.team-thumb img {
+    width: 100%;
+}
+
+
+/*---------------------------------------
+   BUTTONS               
+-----------------------------------------*/
+
+.section-btn {
+    background: #f9f9f9;
+    border-radius: 2px;
+    color: #871717;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 10px 25px;
+    position: relative;
+}
+
+
+/*---------------------------------------
+     PRE LOADER <tham khao nguon tren internet>             
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.spinner {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite;
+}
+
+@-webkit-@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*---------------------------------------
+    MENU              
+-----------------------------------------*/
+
+.custom-navbar {
+    border: none;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.navbar.custom-navbar.navbar-fixed-top {
+    background-color: #706565;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-navbar .navbar-nav.navbar-nav-first {
+    margin-left: 3em;
+}
+
+.custom-navbar .nav .section-btn a:hover {
+    color: #ffffff;
+}
+
+.custom-navbar .nav li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-right: 22px;
+    padding-left: 22px;
+    text-transform: uppercase;
+}
+
+.custom-navbar .nav li a:hover {
+    background: transparent;
+    color: #ce3232;
+}
+
+.custom-navbar .navbar-nav>li>a:hover,
+.custom-navbar .navbar-nav>li>a:focus {
+    background-color: transparent;
+}
+
+.custom-navbar .nav li.active>a {
+    background-color: transparent;
+    color: #ce3232;
+}
+
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+.custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.custom-navbar .navbar-nav.navbar-right .section-btn {
+    display: inline-block;
+    margin: 0.2em 0 0 1em;
+}
+
+.custom-navbar .navbar-nav.navbar-right .section-btn:hover {
+    background: #292929;
+    color: #ffffff;
+}
+
+.custom-navbar .navbar-nav.navbar-right .section-btn:focus {
+    color: #ffffff;
+}
+
+.custom-navbar .navbar-nav.navbar-right .section-btn a {
+    padding: 10px 25px;
+}
+
+
+/*---------------------------------------
+    HOME              
+-----------------------------------------*/
+
+#home {
+    padding: 0;
+}
+
+#home h1 {
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+#home h3 {
+    color: #f9f9f9;
+    font-size: 14px;
+    line-height: inherit;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2em;
+    justify-content: center;
+}
+
+.slider .caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(20, 20, 20, 0.2);
+    height: 100%;
+    color: #fff;
+    cursor: e-resize;
+    padding: 4em 0 0 2em;
+}
+
+.slider .item {
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 650px;
+}
+
+.slider .item-first {
+    background-image: url(../images/seagame.jpg);
+    width: 100%;
+}
+
+
+/*---------------------------------------
+    EVENT              
+-----------------------------------------*/
+
+.event {
+    margin-top: 70px;
+    padding: 0;
+    position: relative;
+}
+
+.event img {
+    width: 100%;
+    height: 480px;
+}
+
+.event .caption {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+}
+
+.arrow-down {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*---------------------------------------
+   POST              
+-----------------------------------------*/
+
+#menu {
+    padding-top: 50px;
+}
+
+.post {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(166, 147, 147);
+    border-radius: 5px;
+}
+
+.post h3,
+.post h5,
+.post h6,
+.post p {
+    text-align: left;
+    margin-top: 4px;
+}
+
+.post a {
+    padding: 12px 8px 0 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-user {
+    padding: 0;
+}
+
+.post-user img {
+    width: 3%;
+    height: 25px;
+    border-radius: 8px;
+    float: left;
+}
+
+.post-user h6 {
+    width: 96%;
+    float: right;
+    margin-bottom: 0;
+    line-height: 30px;
+}
